@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>listen </title>
+<style type="text/css">
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul li {
+    list-style: none;
+    padding: 10px 15px;
+
+}
+
+ul li a {
+    text-decoration: none;
+    color: #222;
+    font-size: 22px;
+    display: block;
+    position: relative;
+    text-transform: uppercase;
+}
+
+ul li a:before {
+    content: "";
+    width: 0;
+    height: 5px;
+    background-color: #00bcd4;
+    position: absolute;
+    top: 120%;
+    left: 0;
+    transition: .5s all;
+}
+
+ul li a:after {
+    content: "";
+    width: 0;
+    height: 5px;
+    background-color: #f0f;
+    position: absolute;
+    top: 120%;
+    right: 0;
+    transition: .5s all;
+}
+
+ul li a:hover:before {
+    width: 50%;
+    transform: translateX(100%);
+}
+
+ul li a:hover:after {
+    width: 50%;
+    transform: translateX(-100%);
+}
+
+</style>
+</head>
+
+<body>
+
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Service</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>listen </title>
+<style type="text/css">
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 500px;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+    transition: .5s all;
+}
+
+.caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 30%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    transition: .5s all;
+    background-color: black;
+    transform: translateY(100%);
+}
+
+.caption h1 {
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.caption p {
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+.container:hover .caption {
+    transform: translateY(0);
+}
+
+.container:hover img {
+    transform: translateY(-30%);
+}
+
+</style>
+</head>
+
+<body>
+
+    <div class="container">
+        <img src="image.png" alt="">
+        <div class="caption">
+            <h1>amazing caption!</h1>
+            <p>you can write anything !!!</p>
+        </div>
+    </div>
+
+</body>
+</html>

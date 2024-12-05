@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>listen </title>
+<style type="text/css">
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+h2 {
+    position: relative;
+    font-size: 3.7em;
+    color: #fff;
+}
+
+h2:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 120%;
+    height: 100%;
+    background-color: red;
+    animation: fading 10s linear infinite;
+}
+
+@keyframes fading {
+    0% {
+        left: -20%;
+    }
+    50% {
+        left: 120%;
+    }
+    100% {
+        left: -20%;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+
+    <h2>Text Fading Effect</h2>
+</body>
+</html>
