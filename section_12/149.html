@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>listen </title>
+<style type="text/css">
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #222;
+}
+
+h2 {
+    position: relative;
+    font-size: 3em;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+h2 span {
+    color: #555;
+    transition: .25s;
+}
+
+h2:hover span {
+    color: #00ff2a;
+    text-shadow: 0 0 5px #0f0, 0 0 15px #0f0, 0 0 30px #0f0;
+}
+
+
+</style>
+</head>
+
+<body>
+
+    <h2 class="text">Javascript Text</h2>
+
+    <script>
+
+        let text = document.querySelector(".text")
+
+        let spans = text.innerText.split("").map((letter, i) => {
+            return `<span style="transition-delay: ${i*40}ms; filter: hue-rotate(${i*30}deg)">${letter}</span>`
+        }).join("")
+
+        text.innerHTML = spans
+
+    </script>
+
+</body>
+</html>
